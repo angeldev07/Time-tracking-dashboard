@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* Primary color */
+    --Blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --self-care: hsl(43, 84%, 65%);
+    /* Neutral color */
+    --body-bgc: hsl(226, 43%, 10%);
+    --card-bgc: hsl(235, 46%, 20%);
+    --options-color: hsl(235, 45%, 61%);
+    --Pale-Blue: hsl(236, 100%, 87%);
+    --fz: 18px;
+}
+
+body{
+    background-color: var(--body-bgc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 2rem;
+    width: 90%;
+    max-width: 1200px;
+    min-width: 270px;
+}
+
+/* --------- Profile component styles --------- */
+.report-container{
+    background-color:var(--card-bgc);
+    border-radius: 1rem;
+    width: 250px;
+}
+
+.profile{
+    background-color: var(--Blue);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.profile img{
+    width: 35%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+.profile-name{
+    font-size: 3rem;
+    padding: .5em 0;
+    color: #fff;
+    font-weight: 300;
+}
+
+.profile-name--fz{
+    display: block;
+    font-size: 1rem;
+    color: var(--Pale-Blue);
+}
+
+.actions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1.5em;
+    padding: 1.5rem 2rem;
+}
+
+.action{
+    display: block;
+    width: 100%;
+    color: var(--options-color);
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.action:hover{
+    color: var(--Pale-Blue);
+}
+
+.select{
+    color: var(--Pale-Blue);
+}
+
+/* --------- Profile component styles end--------- */
+
+
+/* --------- Cards component styles --------- */
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13em, 1fr));
+    gap: 2rem;
+    flex: 1;
+}
+
+.card{
+    background-repeat: no-repeat;
+    background-position: right top;
+    border-radius: 1rem 1rem 2rem 2rem;
+    padding-top: 3rem;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.cards-container .card:nth-child(1){
+    background-color: var(--work);
+    background-image: url('images/icon-work.svg');
+}
+.cards-container .card:nth-child(2){
+    background-color: var(--play);
+    background-image: url('images/icon-play.svg');
+}
+.cards-container .card:nth-child(3){
+    background-color: var(--study);
+    background-image: url('images/icon-study.svg');
+}
+.cards-container .card:nth-child(4){
+    background-color: var(--exercise);
+    background-image: url('images/icon-exercise.svg');
+}
+.cards-container .card:nth-child(5){
+    background-color: var(--social);
+    background-image: url('images/icon-social.svg');
+}
+.cards-container .card:nth-child(6){
+    background-color: var(--self-care);
+    background-image: url('images/icon-self-care.svg');
+}
+
+
+.card-info{
+    background-color: var(--card-bgc);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 100%;
+    transition: all .3s;
+}
+
+.card:hover .card-info{
+    --card-bgc: hsl(235, 46%, 30%);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-info-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5em;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.hour{
+    margin-bottom: .5rem;
+    font-weight: 300;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.last-hour{
+    font-weight: 300;   
+    color: var(--Pale-Blue);
+}
+
+@media screen and (max-width: 700px) {
+    
+    .container{
+        margin: 2rem 0;
+    }
+
+    .card-info-body{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hour{
+        font-size: 1.3rem;
+        margin: 0 1rem 0 0;
+    }
+
+    .last-hour{
+        font-size: .8rem;
+        text-align: center  ;
+    }
+    
+    .report-container{
+        width: 100%;
+    }
+
+    .profile{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .profile img{
+        width: 4em;
+        height: 4em;
+        margin-right: 2rem;;
+    }
+
+    .profile-name{
+        font-size: 2rem;;
+    }
+
+    .actions{
+        justify-content: s;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+}

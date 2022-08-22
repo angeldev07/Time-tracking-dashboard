@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="container">
+    <div class="report-container">
+      <div class="profile">
+        <img src="./images/personal-img.jpg" alt="person">
+        <h1 class="profile-name"> <span class="profile-name--fz">Report for</span> Angel Garcia</h1>
+      </div>
+      <div class="actions">
+        <span id="daily" class="action">Daily</span>
+        <span id="weekly" class="action select">Weekly</span>
+        <span id="monthly" class="action">Monthly</span>
+      </div>
+    </div>
+    <div class="cards-container">
+      <article id ="work" class="card">
+        <div class="card-info">
+          <div class="card-info-head">
+            <span class="activity">Work</span>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis">
+          </div>
+          <div class="card-info-body">
+            <p class="hour"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </article>
+      <article id ="play" class="card">
+        <div class="card-info">
+          <div class="card-info-head">
+            <span class="activity">Play</span>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis">
+          </div>
+          <div class="card-info-body">
+            <p class="hour"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </article>
+      <article id ="study" class="card">
+        <div class="card-info">
+          <div class="card-info-head">
+            <span class="activity">Study</span>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis">
+          </div>
+          <div class="card-info-body">
+            <p class="hour"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </article>
+      <article id ="exercise" class="card">
+        <div class="card-info">
+          <div class="card-info-head">
+            <span class="activity">Exercise</span>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis">
+          </div>
+          <div class="card-info-body">
+            <p class="hour"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </article>
+      <article id="social"  class="card">
+        <div class="card-info">
+          <div class="card-info-head">
+            <span class="activity">Social</span>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis">
+          </div>
+          <div class="card-info-body">
+            <p class="hour"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </article>
+      <article id="self" class="card">
+        <div class="card-info">
+          <div class="card-info-head">
+            <span class="activity">Self Care</span>
+            <img src="./images/icon-ellipsis.svg" alt="elipsis">
+          </div>
+          <div class="card-info-body">
+            <p class="hour"></p>
+            <p class="last-hour"></p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+  <script src="main.js"></script>
+</body>
+</html>
+
+<!-- 
+Report for
+  
+
+  Daily
+  Weekly
+  Monthly
+
+
+  Work
+  5hrs  daily 
+  Previous - 7hrs  daily 
+  32hrs  weekly 
+  Previous - 36hrs  weekly 
+  103hrs  monthly 
+  Previous - 128hrs  monthly 
+
+  Play
+  1hr  daily 
+  Previous - 2hrs  daily 
+  10hrs  weekly 
+  Previous - 8hrs  weekly 
+  23hrs  monthly 
+  Previous - 29hrs  monthly 
+
+  Study
+  0hrs  daily 
+  Previous - 1hr  daily 
+  4hrs  weekly 
+  Previous - 7hrs  weekly 
+  13hrs  monthly 
+  Previous - 19hrs  monthly 
+
+  Exercise
+  1hr  daily 
+  Previous - 1hr  daily 
+  4hrs  weekly 
+  Previous - 5hrs  weekly 
+  11hrs  monthly 
+  Previous - 18hrs  monthly 
+
+  Social
+ -->
